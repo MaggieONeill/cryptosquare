@@ -16,6 +16,14 @@ describe('cryptosquare', function() {
     expect(cryptosquare("my butts on fire")).to.equal(13);
   });
 
+  it("splits string into four rows of four", function(){
+    expect(cryptosquare("mybuttsonfire")).to.equal("mybu ttso nfir e");
+  });
+
+  it("returns length of array", function(){
+    expect(cryptosquare("mybuttsonfire")).to.equal(2);
+  });
+
 
 
 });
